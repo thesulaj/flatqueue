@@ -1,15 +1,15 @@
-declare module 'flatqueue' {
-  export default class FlatQueue<A> {
-    length: number;
+export default class FlatQueue<A> {
+  length: number;
 
-    clear: () => void;
+  clear: () => void;
 
-    push: (id: number, value: A) => void;
+  push: (id: number, value: A) => void;
 
-    pop: () => number|undefined;
+  pop: () => number|undefined;
 
-    peek: () => number|undefined;
+  peek: () => number|undefined;
 
-    peekValue: () => A|undefined;
-  }
+  peekValue: () => A|undefined;
 }
+
+export as namespace FlatQueue;
